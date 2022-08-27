@@ -1,8 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 
 export default function FirstPost() {
+
   return <>
+    {/* 更改 Head 裡的東西 */}
+    {/* 如果要一次更改所有頁面的Head，或是要修改<html>，則需要用 _document.js */}
+    <Head>
+      <title>First Post</title>
+    </Head>
+
     <h1>First Post</h1>
     <Link href="/">Back to home</Link>
 
