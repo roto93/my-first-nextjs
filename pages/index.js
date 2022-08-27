@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,8 +11,16 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <Link href="/posts/first-post">First Post!</Link>
         </h1>
+        <h1 className="title">
+          Welcome to <Link href="/posts/second-post">
+            {/* 要改變Link的樣式，就要在裡面另外用<a>包住，然後在<a>加className */}
+            <a className="last">Second Post!</a>
+          </Link>
+        </h1>
+        {/* 要連到外部連結，就直接用<a>*/}
+        <a>Next.js</a>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
