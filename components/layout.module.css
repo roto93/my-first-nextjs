@@ -1,0 +1,19 @@
+.container {
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.box{
+  border: 1px solid red;
+}
+
+.box .text{
+  color: blue;
+}
+
+/* 在 css module 裡，也能組合 selector 
+  但一定要是 class 和 id
+*/
+.box .text:hover{
+  font-weight: bold;
+}
